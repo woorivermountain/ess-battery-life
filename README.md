@@ -24,7 +24,7 @@ MIT–Stanford Battery Dataset · Regression · Batch 1 학습 / Batch 2 평가
 
 ---
 
-## 1. 전략을 실제 Feature와 모델로 구현 — 20점
+## 1. 전략을 실제 Feature와 모델로 구현
 
 ### DAY 1 EDA에서 확인한 내용
 
@@ -85,7 +85,7 @@ Batch 1에서 `log_var_dq`와 Cycle Life의 Spearman 상관은 -0.882였다.
 
 ---
 
-## 2. Pipeline 개발 — 40점
+## 2. Pipeline 개발
 
 ### 데이터 정리
 
@@ -172,7 +172,7 @@ pytest
 
 ---
 
-## 3. 성능 리포팅과 목표 대비 GAP — 20점
+## 3. 성능 리포팅과 목표 대비 GAP
 
 ### 후보 모델 비교
 
@@ -225,7 +225,7 @@ R²가 음수라는 점도 제외하지 않았다. Batch 1에서는 관계를 �
 
 ---
 
-## 4. 분석 결과의 도메인 해석과 한계 — 20점
+## 4. 분석 결과의 도메인 해석과 한계
 
 ### 오류가 큰 셀
 
