@@ -134,3 +134,5 @@ Target-Test를 validation set처럼 쓰게 된다.
 - Attia et al. (2022), knee-point review and prediction. [Paper](https://www.sciencedirect.com/science/article/pii/S2666546820300069)
 
 논문별 재현 조건과 논리적 주의점은 [문헌 검토](research/literature_review.md)에 정리했다.
+
+평가항목별 구현 위치는 [DAY 2 평가항목 대응표](RUBRIC_CHECKLIST.md)에서 바로 확인할 수 있다.
