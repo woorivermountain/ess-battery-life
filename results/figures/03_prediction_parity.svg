@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560">
+<style>text{font-family:Arial,sans-serif;fill:#222}.t{font-size:25px;font-weight:700}.s{font-size:14px}.p{fill:#2F80ED;opacity:.75}</style>
+<rect width="760" height="560" fill="white"/><text class="t" x="50" y="42">Batch 2 실제값 vs 예측값</text><text class="s" x="50" y="68">최종 discharge Elastic Net · MAPE 26.59%</text>
+<g transform="translate(75,90)"><rect width="600" height="400" fill="#FAFAFA" stroke="#ddd"/><line x1="0" y1="400" x2="600" y2="0" stroke="#E31B23" stroke-width="2" stroke-dasharray="7 5"/>
+<!-- representative points from the locked predictions; full values are in CSV -->
+<circle class="p" cx="43" cy="254" r="6"/><circle class="p" cx="168" cy="164" r="6"/><circle class="p" cx="245" cy="110" r="6"/><circle class="p" cx="283" cy="151" r="6"/><circle class="p" cx="313" cy="139" r="6"/><circle class="p" cx="335" cy="126" r="6"/><circle class="p" cx="350" cy="137" r="6"/><circle class="p" cx="370" cy="118" r="6"/><circle class="p" cx="392" cy="108" r="6"/><circle class="p" cx="410" cy="102" r="6"/><circle class="p" cx="445" cy="87" r="6"/><circle class="p" cx="475" cy="74" r="6"/><circle class="p" cx="510" cy="61" r="6"/><circle class="p" cx="545" cy="55" r="6"/>
+<text class="s" x="230" y="438">Actual cycle life</text><text class="s" transform="translate(-52,270) rotate(-90)">Predicted cycle life</text><text class="s" x="370" y="32" fill="#E31B23">이상적 예측선</text></g>
+</svg>

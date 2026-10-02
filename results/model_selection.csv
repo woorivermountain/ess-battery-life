@@ -1,0 +1,8 @@
+model,feature_set,n_features,eligible_for_selection,cv_mape_mean_pct,cv_mape_std_pct,cv_mape_p90_pct,policy_group_cv_mape_pct,best_params,note,selected_before_target_test
+median_baseline,variance,1,True,23.332217549439044,5.273859493819458,29.506215794977155,22.960053789206633,{},,False
+variance_ridge,variance,1,True,9.169981053574675,2.0840908118661305,11.471060658802886,8.916925470504768,"{""regressor__model__alpha"": 1.1937766417144369}",,False
+discharge_ridge,discharge,10,True,8.141794073041952,2.76059621445503,11.431132881092221,9.174442475356821,"{""regressor__model__alpha"": 2.8942661247167516}",,False
+discharge_elasticnet,discharge,10,True,7.494430109849173,2.186549317209203,9.865766764182975,8.212493995215665,"{""regressor__model__alpha"": 0.004641588833612777, ""regressor__model__l1_ratio"": 0.7}",,True
+discharge_random_forest,discharge,10,True,10.2715016421285,3.218957458666108,14.469212627220134,11.817759532724772,"{""max_depth"": null, ""max_features"": 1.0, ""min_samples_leaf"": 1, ""n_estimators"": 300}",,False
+sensor_ridge,sensor,17,True,11.29148440784586,4.738075573180256,16.992380641073773,12.836802386607777,"{""regressor__model__alpha"": 2.8942661247167516}",,False
+policy_aware_elasticnet,policy_aware,21,False,8.562487635771971,2.6985569417228863,12.39876426248608,10.431227372636574,"{""regressor__model__alpha"": 0.004641588833612777, ""regressor__model__l1_ratio"": 0.9}",Protocol leakage sensitivity analysis only,False

@@ -1,0 +1,8 @@
+{
+  "selected_model": "discharge_elasticnet",
+  "selection_rule": "within 1 pp of best repeated-CV mean, then lowest charge-policy-group CV MAPE",
+  "target_test_opened_after_selection": true,
+  "train_cells": 41,
+  "target_test_cells": 43,
+  "batch3_status": "not scored: optional set requires raw re-extraction audit"
+}
