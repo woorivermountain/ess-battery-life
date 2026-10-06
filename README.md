@@ -1,5 +1,16 @@
 # 초기 충·방전 데이터 기반 ESS 배터리 수명 예측
 
+**점수가 좋아 보이는 모델보다, 보지 않은 Batch에서 실패를 정직하게 드러내는 평가 설계를 우선한 ML 프로젝트입니다.**
+
+`Python` · `scikit-learn` · `Leakage-safe Pipeline` · `Group CV` · `Distribution Shift`
+
+| Question | Decision | Evidence | Boundary |
+| --- | --- | --- | --- |
+| 초기 100사이클로 수명을 예측할 수 있는가 | Batch 1에서만 선택하고 Batch 2를 마지막까지 격리 | Batch 1 반복 CV MAPE **7.49%**, Batch 2 MAPE **26.59%** | 개발 분포 성능을 현장 성능으로 일반화하지 않음 |
+| 외부평가 후 더 좋은 후보가 보이면 바꿀 것인가 | 사후 성능이 더 좋은 Sensor Ridge로 교체하지 않음 | Batch 2 Sensor Ridge **22.55%** | 테스트셋을 검증셋으로 쓰는 선택 편향 방지 |
+
+> **핵심 판단** — 전체 수명 이후에만 알 수 있는 knee를 피처에서 제외하고, 전처리를 CV fold 안에 가두며, 실패 원인을 target·feature shift와 불확실성까지 연결했습니다.
+
 **SKALA 3반 우강산 (U088)**
 
 MIT–Stanford Battery Dataset · Regression · Batch 1 학습 / Batch 2 평가
@@ -154,8 +165,8 @@ Batch 2 고정 평가
 ```
 
 ```bash
-git clone https://github.com/woorivermountain/skala-ess-battery-life-u088.git
-cd skala-ess-battery-life-u088
+git clone https://github.com/woorivermountain/ess-battery-life.git
+cd ess-battery-life
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
